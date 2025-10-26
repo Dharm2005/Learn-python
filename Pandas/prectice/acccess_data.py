@@ -26,4 +26,20 @@ print(coffee.index)
 # so now the value of coffee.index is monday, tuesday and so on, means 0, 1, 2... (rows) is become monday, tuesday and so on
 print(coffee.head(3))
 
+# for single value
+print(coffee.at[0,"Units Sold"])
 
+# for single value by passing index
+print(coffee.iat[0,1])
+
+
+# other ways to access data
+
+print(coffee.Day)
+# or
+print(coffee["Day"])
+
+# can not do this
+# print(coffee.Unit_Solds) <-  error
+# instead of this you can do this
+print(coffee["Units Sold"])
